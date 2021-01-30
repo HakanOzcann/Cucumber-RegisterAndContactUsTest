@@ -1,5 +1,6 @@
 package stepDefinition;
 
+import PageObjectModel.contactUsPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -11,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class contactUs_Steps {
 
     private WebDriver driver;
-
+    contactUsPage contactUsPage = new contactUsPage();
 
     @Given("^Navigate to Website$")
     public void navigate_to_Website() throws Throwable {
@@ -24,7 +25,7 @@ public class contactUs_Steps {
 
     @Given("^Click on contact us button$")
     public void click_on_contact_us_button() throws Throwable {
-
+        contactUsPage.clickContactUsButton();
     }
 
     @Given("^Select subject Heading$")

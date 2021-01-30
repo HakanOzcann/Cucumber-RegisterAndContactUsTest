@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class contactUsPage {
+public class contactUsPage extends AbstractClass {
     WebDriver driver;
 
     public contactUsPage()
@@ -18,6 +18,7 @@ public class contactUsPage {
     private WebElement contactUsButton;
 
     public void clickContactUsButton(){
-        clickFunction(contactUsButton);
+    clickFunction(contactUsButton);
     }
+
 }
