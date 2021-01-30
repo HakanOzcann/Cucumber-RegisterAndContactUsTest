@@ -7,4 +7,6 @@ Feature: Contact Us Test
     And Select subject Heading
     And Type Email
     And Type order reference
-    And
+    And Type a message
+    When Click on send button
+    Then Verify success message
