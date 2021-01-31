@@ -14,5 +14,5 @@ Feature: Register Test
     Examples:
       | Email | firstname | lastname | password | company | address |
 
-      |testhakan@gmail.com |Hakan |Özcan |123test |testCompany |testAddress|
-      |test123@gmail.com |Samet |Kaya |123test1 |testCompany1 |testAddress1|
+      |testHakan@gmail.com |Hakan |Ozcan |123test |testCompany |testAddress|
+      |test1234@gmail.com |TestName |TestSurname |123test1 |testCompany1 |testAddress1|

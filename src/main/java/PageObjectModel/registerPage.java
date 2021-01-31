@@ -21,11 +21,26 @@ public class registerPage extends AbstractClass {
     @FindBy(name = "email_create")
     private WebElement emailTextBox;
 
+    public void typeEmail(String email)
+    {
+        sendKeysFunction(emailTextBox, email);
+    }
+
     @FindBy(id = "SubmitCreate")
     private WebElement submitButton;
 
+    public void clickOnSubmitButton()
+    {
+        clickFunction(submitButton);
+    }
+
     @FindBy(id= "id_gender1")
     private WebElement gender;
+
+    public void clickOnGenderButton()
+    {
+        clickFunction(gender);
+    }
 
     @FindBy(id= "customer_firstname")
     private WebElement firstname;
@@ -33,46 +48,41 @@ public class registerPage extends AbstractClass {
     @FindBy(id= "customer_lastname")
     private WebElement lastname;
 
-    @FindBy(name= "passwd")
-    private WebElement password;
-
-    @FindBy(id = "company")
-    private WebElement company;
-
-    @FindBy(name = "address1")
-    private WebElement address;
-
-    public void clickOnSignInButton()
-    {
-        clickFunction(SigInButton);
-    }
-    public void typeEmail(String email)
-    {
-        sendKeysFunction(emailTextBox, email);
-    }
-    public void clickOnSubmitButton()
-    {
-        clickFunction(submitButton);
-    }
-    public void clickOnGenderButton()
-    {
-        clickFunction(gender);
-    }
     public void typeFirstNameAndLastName(String firstName, String lastName)
     {
         sendKeysFunction(firstname,firstName);
         sendKeysFunction(lastname, lastName);
     }
-    public void typePasswrod(String password1)
+
+    @FindBy(name= "passwd")
+    private WebElement password;
+
+    public void typePasswrod(String Password)
     {
-        sendKeysFunction(password, password1);
+        sendKeysFunction(password, Password);
     }
-    public void typeCompany(String company1){
-        sendKeysFunction(company, company1);
+
+    @FindBy(id = "company")
+    private WebElement company;
+
+    public void typeCompany(String Company)
+    {
+        sendKeysFunction(company, Company);
     }
-    public void typeAddress(String address1){
-        sendKeysFunction(address, address1);
+
+    @FindBy(name = "address1")
+    private WebElement address;
+
+    public void typeAddress(String Address)
+    {
+        sendKeysFunction(address, Address);
     }
+
+    public void clickOnSignInButton()
+    {
+        clickFunction(SigInButton);
+    }
+
 }
 
 
