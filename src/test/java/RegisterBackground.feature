@@ -3,16 +3,16 @@ Feature: Register Test
   Background: 
     Given Navigate to Website
     And Click  Sign in button
-    And Type Email "test12345@gmail.com"
+    And Type email "test1234@hotmail.com"
     And Click on Create an Account button
     
       Scenario: Person1
-        And type firstname "hakan" and lastname "ozcan"
-        And type password "123test123"
+        And Type firstname "testName" and lastname "testSurname"
+        And Type password "123test123"
 
       Scenario: Person2
         And Type company "typeCompany"
-        And type address "testAddress"
+        And Type address "testAddress"
 
         Scenario Outline: Person3
 
