@@ -2,7 +2,7 @@ Feature: Register Test
 
   Scenario Outline: Create An Account
 
-    Given Navigate to website
+    Given Navigate to Website
     And Click  Sign in button
     And Type email "<Email>"
     And Click on Create an Account button
