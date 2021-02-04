@@ -22,4 +22,4 @@ Feature: Register Test
           And Type address "<adres>"
           Examples:
             | isim | soyisim | sifre | sirket | adres |
-            |testOzcan@gmail.com | testName | testSurname |123test |testCompany |testAddress|
+            |testOzcan@gmail.com | testName | testSurname |testCompany |testAddress|
