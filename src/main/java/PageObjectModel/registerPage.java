@@ -18,6 +18,11 @@ public class registerPage extends AbstractClass {
     @FindBy(css = "a.login")
     private WebElement SigInButton;
 
+    public void clickOnSignInButton()
+    {
+        clickFunction(SigInButton);
+    }
+
     @FindBy(name = "email_create")
     private WebElement emailTextBox;
 
@@ -78,10 +83,7 @@ public class registerPage extends AbstractClass {
         sendKeysFunction(address, Address);
     }
 
-    public void clickOnSignInButton()
-    {
-        clickFunction(SigInButton);
-    }
+
 
 }
 
